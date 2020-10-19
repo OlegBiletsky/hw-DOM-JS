@@ -59,7 +59,7 @@ var countryList = [
 
 let container = document.createElement('div');
 let list = document.createElement('ol');
-
+let mln = 1000000;
 for (let i = 0; i < countryList.length; i++) {
     let list_item = document.createElement('li');
     let country_name = document.createElement('h1');
@@ -69,7 +69,7 @@ for (let i = 0; i < countryList.length; i++) {
     country_name.innerHTML = ` країна: ${countryList[i].country} ` ;//? яка різниця???
     let c = countryList[i].capital;
     capital_name.innerHTML = `столиця: <em> ${c} </em> `;
-    capital_population.innerHTML = `Населення столиці: ${countryList[i].capital_count / 1000000} млн. ` ; 
+    capital_population.innerHTML = `Населення столиці: ${countryList[i].capital_count / mln} млн. ` ; 
 
     if (countryList[i].country === "Україна") {
         country_name.classList.add('my-country');
