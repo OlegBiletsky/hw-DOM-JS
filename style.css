@@ -1,0 +1,13 @@
+body {
+    background-color: rgba(175, 221, 180, 0.771);
+    margin: auto;
+    max-width: 700px;
+}
+
+.my-country {
+    background-color: rgb(56, 147, 238);
+}
+.my-capital {
+    
+    background-color: rgb(243, 220, 71);
+}
